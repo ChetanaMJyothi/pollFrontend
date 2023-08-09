@@ -17,7 +17,7 @@ const [errMessage, setErrMessage] = useState('');
         e.preventDefault();
        axios({
             method: 'post',
-            url: 'http://localhost:3000/api/user/signup',
+            url: 'https://wandering-slippers-fawn.cyclic.app/api/user/signup',
             data: {
               name: nameRef.current.value,
               email: emailRef.current.value,
