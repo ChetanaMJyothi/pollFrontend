@@ -1,20 +1,19 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import { saveUserId, loginUser, saveUserToken } from '../Redux/validSlice';
-import { useSelector, useDispatch } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import './Main.css'
 import question from './images/question.jpg';
 import choose from './images/choose.jpg';
 import result from './images/result.jpg'
 const Main = () => {
   const navigate = useNavigate();
-  const [selectedOption, setSelectedOption] = useState('');
+  /* const [selectedOption, setSelectedOption] = useState(''); */
   const dispatch = useDispatch()
 
   const optionHandler = (e) => {
     console.log(e)
-    setSelectedOption(e);
+   /*  setSelectedOption(e); */
     console.log(e);
     navigate(e)
   }

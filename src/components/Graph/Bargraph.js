@@ -43,7 +43,7 @@ console.log(props.data)
       },
     });
 
-   },[]);  
+   });  
 
   return (
     <div className='setWidth'>

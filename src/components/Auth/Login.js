@@ -1,8 +1,8 @@
 import React,  { useRef, useState } from 'react';
 import axios from 'axios';
-import { useSelector, useDispatch } from 'react-redux'
-import { saveUserId, loginUser, saveUserToken } from '../../Redux/validSlice';
-import { Outlet, useNavigate, Link } from 'react-router-dom';
+import {  useDispatch } from 'react-redux'
+import { saveUserId,  saveUserToken } from '../../Redux/validSlice';
+import {  useNavigate } from 'react-router-dom';
 import './Auth.css';
 const Login = () => {
 const [errMessage, setErrMessage] = useState('');

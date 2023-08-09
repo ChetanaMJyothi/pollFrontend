@@ -1,15 +1,13 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import axios from 'axios';
-import { saveUserId, loginUser, saveUserToken } from '../../Redux/validSlice';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector} from 'react-redux'
 import style from './PollList.module.css'
 const PollList = () => {
   const [polls, setPoll] = useState([])
-  const [selectedOption, setSelectedOption] = useState('');
+/*   const [selectedOption, setSelectedOption] = useState(''); */
   const loginUserToken = useSelector((state) => state.poll.savedToken)
   const loginUserId = useSelector((state) => state.poll.savedUserId)
 
-  const dispatch = useDispatch()
   useEffect(() => {
     axios({
       method: 'get',
@@ -27,10 +25,10 @@ const PollList = () => {
       .catch((error) => {
         console.log(error);
       })
-  }, [])
+  })
   
   const selectRadioHandler = (optionN, val, pollId) => {
-    setSelectedOption(val)
+   /*  setSelectedOption(val) */
     console.log(val);
     console.log(pollId)
 

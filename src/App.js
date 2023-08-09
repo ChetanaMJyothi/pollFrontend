@@ -1,7 +1,7 @@
 import './App.css';
 import Layout from './components/Layout';
 import { saveUserId, loginUser, saveUserToken } from './Redux/validSlice';
-import { useSelector, useDispatch } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import { useEffect } from 'react';
 import 'remixicon/fonts/remixicon.css'
 
@@ -18,7 +18,7 @@ function App() {
   dispatch(saveUserToken(storedToken.token));
   dispatch(loginUser(true));
   }
-},[])
+})
   return (
     
     <div className="App">

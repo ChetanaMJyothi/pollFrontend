@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Bargraph from '../Graph/Bargraph';
-import { Link, Outlet } from 'react-router-dom';
 import style from  './PollResult.module.css'
 const PollResult = () => {
   const [results, setResults] = useState([]);
@@ -39,6 +38,5 @@ const PollResult = () => {
 
   )
 }
-{/* <Bargraph data={[{option:"option-1", count: item.option1}, {option:"option-2", count: item.option2},{option:"option-3", count: item.option3},{option:"option-4", count: item.option4}
-        ]} /> */}
+
 export default PollResult

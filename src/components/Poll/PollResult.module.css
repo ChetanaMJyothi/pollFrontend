@@ -8,9 +8,6 @@
 .result_text{
     display: flex;
     flex-direction: column;
-    align-items: start;
-   
-    
 }
 .result_graph{
     background-color: #EDD5CA;

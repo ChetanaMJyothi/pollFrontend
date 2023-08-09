@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { Outlet, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import {useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import style from './PollForm.module.css'
 const PollForm = (props) => {
