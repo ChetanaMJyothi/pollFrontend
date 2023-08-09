@@ -1,0 +1,31 @@
+.list_div{
+padding: 20px;
+}
+h2{
+    font-weight: 600;
+}
+.label_content{
+    font-weight: bold;
+}
+.form_sec{
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+background-color: #d89a9e;
+padding: 10px;
+border-radius: 5px;
+font-size: 18px;
+}
+ input{
+    border: 1px solid black;
+    margin-right:10px ;
+} 
+.delete_btn{
+    width: fit-content;
+    padding: 0 5px;
+    margin-top: 15px;
+}
+small{
+    font-weight: 600;
+margin-top: 5px;    
+}

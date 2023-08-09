@@ -1,0 +1,44 @@
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #c37d92;
+    font-size: 18px;
+width: fit-content;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+button{
+    border-radius: 5px;
+    padding: 10px;
+}
+.closeBtn i{
+ font-size: 30px;
+ display: flex;
+ justify-content: right;
+}
+.closeBtn i:hover{
+    cursor: pointer;
+
+}
+.closeBtn{
+    border: none;
+background-color: transparent;
+width: fit-content;
+}
+.closeBtn:hover{
+    border: none;
+background-color: transparent;
+}
+input{
+    width: 500px;
+    border-radius: 5px;
+    background-color: #e0c1b3;
+}

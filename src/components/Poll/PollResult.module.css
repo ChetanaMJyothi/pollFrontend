@@ -1,0 +1,30 @@
+.result_graph{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 18px;
+}
+.result_text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+    
+}
+.result_graph{
+    background-color: #EDD5CA;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px auto;
+}
+.Span_ele{
+     display: block;
+    margin-left: 70px;
+    font-size: 15px;
+    color: #55363f;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px 10px; 
+}

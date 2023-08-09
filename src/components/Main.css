@@ -1,0 +1,35 @@
+.main_bg{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.sec{
+    background-color: #e0c1b3 ;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-weight: 600;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+.sec:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+    
+.txtSec{
+    padding-left: 20px;
+}
+.main_bg button{
+    border: none;
+    background-color: white;
+
+}
+.btn_img{
+    width:100px;
+
+}
