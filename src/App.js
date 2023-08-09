@@ -10,9 +10,6 @@ function App() {
 
   useEffect(()=>{
   const storedToken = JSON.parse(localStorage.getItem('userData'));
-  console.log("stored userID",storedToken.userID)
-  console.log("stored token", storedToken.token)
- 
   if(storedToken){
   dispatch(saveUserId(storedToken.userID));
   dispatch(saveUserToken(storedToken.token));
