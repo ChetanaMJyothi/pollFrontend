@@ -35,9 +35,8 @@ const [errMessage, setErrMessage] = useState('');
           })
           .catch((error)=>{
             console.log(error);
-            console.log(error.response.data.message);
-            setErrMessage(error.response.data.message);
-          
+          /*   setErrMessage(error.response.data.message);
+            console.log(error.response.data.message); */
 
           })
     }
