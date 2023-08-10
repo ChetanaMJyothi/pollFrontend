@@ -3,6 +3,7 @@ import Main from './Main';
 import Login from './Auth/Login';
 import Sign from './Auth/Sign';
 import Option from './Poll/Option'
+import Helper from './Poll/Helper';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -30,6 +31,10 @@ const Layout = () => {
       path: '/option',
       element: <Option />,
       children:[
+        {
+          path: '',
+          element: <Helper/>
+        },
         {
           path: 'create',
           element: <PollCreate />
