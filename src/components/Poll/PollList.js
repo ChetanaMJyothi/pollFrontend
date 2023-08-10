@@ -137,7 +137,7 @@ const PollList = () => {
         {polls.map((item, index) => {
 
           return (<form key={index + 1} className={style.form_sec}>
-            <h2>{index + 1}. {item.question}</h2>
+            <h2 className={style.h2tag}>{index + 1}. {item.question}</h2>
             <label htmlFor={index + "1"} className={style.label_content}>
               <input class="form-check-input" type="radio" id={index + "1"} name={"poll" + item} checked={item.option1.vote.includes(loginUserId)} value={item.option1.content} onChange={() => selectRadioHandler(1, item.option1.content, item._id)} />
               {item.option1.content}</label>

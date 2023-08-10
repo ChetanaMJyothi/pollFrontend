@@ -1,5 +1,5 @@
-.setWidth{
- width: 500px;
+.setWidth {
+    width: 500px;
     height: 500px;
-margin-top: 50px;  
+    align-self: center;
 }

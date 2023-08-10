@@ -35,9 +35,10 @@ const PollResult = () => {
               <p>Option-3: {item.option3.content} , <span className={style.Span_ele}>Number of votes: {item.option3.voteCount}</span> </p>
               <p>Option-4: {item.option4.content} ,<span className={style.Span_ele}> Number of votes: {item.option4.voteCount}</span> </p>
             </div>
+           
             <Bargraph count={index + 1} question={item.question} data={[{ option: "option-1", count: item.option1.voteCount }, { option: "option-2", count: item.option2.voteCount }, { option: "option-3", count: item.option3.voteCount }, { option: "option-4", count: item.option4.voteCount }
             ]} />
-
+           
           </div>
         )
       })
