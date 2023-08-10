@@ -1,27 +1,36 @@
-.result_graph{
+.result_graph {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-weight: 600;
     font-size: 18px;
 }
-.result_text{
+
+.result_text {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
-.result_graph{
+
+.result_graph {
     background-color: #EDD5CA;
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
-    width: 90%;
     margin: 10px auto;
 }
-.Span_ele{
-     display: block;
-    margin-left: 70px;
+
+.Span_ele {
+    display: block;
+    margin-left: 100px;
     font-size: 15px;
-    color: #55363f;
+    color: #260e74;
     border: 3px solid black;
     border-radius: 20px;
-    padding: 5px 10px; 
+    padding: 5px 10px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 35px;
 }

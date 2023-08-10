@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   isLogIn: false,
   savedUserId: '',
-  savedToken:'',
+  savedToken: '',
 }
 
 export const validSlice = createSlice({
@@ -11,23 +11,23 @@ export const validSlice = createSlice({
   initialState,
   reducers: {
     logoutUser: (state) => {
-     
+
       state.isLogIn = false;
     },
-    loginUser :(state)=>{
-        state.isLogIn =true;
+    loginUser: (state) => {
+      state.isLogIn = true;
     },
-    saveUserId:(state,actions)=>{
+    saveUserId: (state, actions) => {
       state.savedUserId = actions.payload;
     },
-    saveUserToken:(state,actions)=>{
+    saveUserToken: (state, actions) => {
       state.savedToken = actions.payload;
     },
-    
+
   },
 })
 
 // Action creators are generated for each case reducer function
-export const {logoutUser, loginUser,saveUserId, saveUserToken } = validSlice.actions
+export const { logoutUser, loginUser, saveUserId, saveUserToken } = validSlice.actions
 
 export default validSlice.reducer

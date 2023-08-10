@@ -22,7 +22,7 @@ const Layout = () => {
       path: '/sign',
       element: <Sign />
     },
-    
+
     {
       path: "/main",
       element: <Main />,
@@ -30,10 +30,10 @@ const Layout = () => {
     {
       path: '/option',
       element: <Option />,
-      children:[
+      children: [
         {
           path: '',
-          element: <Helper/>
+          element: <Helper />
         },
         {
           path: 'create',
@@ -46,7 +46,7 @@ const Layout = () => {
         {
           path: 'result',
           element: <PollResult />,
-          
+
         },
         {
           element: <RouteNotFound />

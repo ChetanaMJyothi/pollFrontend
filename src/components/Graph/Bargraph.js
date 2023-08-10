@@ -18,10 +18,10 @@ console.log(props.data)
     chartRef.current = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: data.map(row => row.option),
+        labels: data.map((row) => row.option),
         datasets: [
           {
-            label: `${props.question}`,
+            label: "X-axis: 4 Options, Y-axis: Number of votes",
             data: data.map(row => row.count),
             backgroundColor: [
                 'rgba(255, 99, 132, 0.7)',
@@ -48,8 +48,6 @@ console.log(props.data)
   return (
     <div className='setWidth'>
       <canvas id={`acquisitions${props.count}`} ></canvas>
-      
-
     </div>
   );
 }

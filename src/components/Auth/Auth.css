@@ -49,9 +49,11 @@
   display: inline-block;
   font-weight: 600;
 }
-.errColor{
+
+.errColor {
   color: red;
 }
+
 .active {
   padding-left: 0px;
 }
@@ -120,7 +122,7 @@ label {
   cursor: pointer;
   background-color: #101b17;
   color: white;
-  width: 100%;
+  width: 100px;
   padding: 10px 20px;
   display: block;
   height: 39px;

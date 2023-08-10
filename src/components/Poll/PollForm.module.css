@@ -1,4 +1,4 @@
-.formStyle{
+.formStyle {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -7,37 +7,46 @@
     margin: 10px auto;
     background-color: #c37d92;
     font-size: 18px;
-width: fit-content;
+    width: fit-content;
 }
-.inputForm{
+
+.inputForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
-button{
+
+button {
     border-radius: 5px;
     padding: 10px;
+    border: none;
+    width: fit-content;
 }
-.closeBtn i{
- font-size: 30px;
- display: flex;
- justify-content: right;
+
+.closeBtn i {
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
 }
-.closeBtn i:hover{
+
+.closeBtn i:hover {
     cursor: pointer;
 
 }
-.closeBtn{
+
+.closeBtn {
     border: none;
-background-color: transparent;
-width: fit-content;
+    background-color: transparent;
+    width: fit-content;
 }
-.closeBtn:hover{
+
+.closeBtn:hover {
     border: none;
-background-color: transparent;
+    background-color: transparent;
 }
-input{
+
+input {
     width: 500px;
     border-radius: 5px;
     background-color: #e0c1b3;

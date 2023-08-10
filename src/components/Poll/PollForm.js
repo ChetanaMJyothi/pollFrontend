@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import style from './PollForm.module.css'
 const PollForm = (props) => {
@@ -16,63 +16,63 @@ const PollForm = (props) => {
     const option_3Ref = useRef();
     const option_4Ref = useRef();
 
-    
+
     const submitHandler = (e) => {
         e.preventDefault();
         setPollObj({
             question: questionRef.current.value,
-            option1 : option_1Ref.current.value,
-            option2 : option_2Ref.current.value,
-            option3 : option_3Ref.current.value,
-            option4 : option_4Ref.current.value,
-            owner : loginUser,
+            option1: option_1Ref.current.value,
+            option2: option_2Ref.current.value,
+            option3: option_3Ref.current.value,
+            option4: option_4Ref.current.value,
+            owner: loginUser,
         })
         axios({
             method: 'post',
             url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
-            data:{
+            data: {
                 question: questionRef.current.value,
-                option1 : option_1Ref.current.value,
-                option2 : option_2Ref.current.value,
-                option3 : option_3Ref.current.value,
-                option4 : option_4Ref.current.value,
-                owner : loginUser,
+                option1: option_1Ref.current.value,
+                option2: option_2Ref.current.value,
+                option3: option_3Ref.current.value,
+                option4: option_4Ref.current.value,
+                owner: loginUser,
             },
             headers: {
                 'Authorization': "Bearer " + loginUserToken,
-              }
-          })
-          .then(function(response){
-            console.log(response)
-            console.log(response.data.userId)
-            navigate('/option');
-          })
-          .catch((error)=>{
-            console.log(error);
-          })
+            }
+        })
+            .then(function (response) {
+                console.log(response)
+                console.log(response.data.userId)
+                navigate('/option');
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
     const closeHandler = () => {
         console.log(pollObj);
         props.onClose();
     }
-    
-    
+
+
     return (
         <div className={style.formStyle}>
-           
-         <button type="button" className={style.closeBtn} onClick={closeHandler}><i class="ri-close-circle-fill"></i></button>
+
+            <button type="button" className={style.closeBtn} onClick={closeHandler}><i class="ri-close-circle-fill"></i></button>
             <form onSubmit={submitHandler} className={style.inputForm}>
                 <label>Enter your Question </label>
                 <input type="text" placeholder='Ask question' ref={questionRef} />
                 <label>Options</label>
-                <input type="text" placeholder='Add Option' ref={option_1Ref}/>
-                <input type="text" placeholder='Add Option' ref={option_2Ref}/>
-                <input type="text" placeholder='Add Option' ref={option_3Ref}/>
-                <input type="text" placeholder='Add Option' ref={option_4Ref}/>
+                <input type="text" placeholder='Add Option' ref={option_1Ref} />
+                <input type="text" placeholder='Add Option' ref={option_2Ref} />
+                <input type="text" placeholder='Add Option' ref={option_3Ref} />
+                <input type="text" placeholder='Add Option' ref={option_4Ref} />
 
                 <button type="submit" >Send Poll</button>
             </form>
-          
+
         </div>
     )
 }

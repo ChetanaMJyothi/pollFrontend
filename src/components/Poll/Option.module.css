@@ -1,26 +1,30 @@
-.linkMenu{
+.linkMenu {
     display: flex;
     justify-content: left;
-    gap:30px;
+    gap: 30px;
     margin: 20px;
 }
-.linkStyle{
+
+.linkStyle {
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-weight: 600;
-   
+
 }
-.linkStyle:hover{
+
+.linkStyle:hover {
     color: yellowgreen;
 }
-.activeStyle{
+
+.activeStyle {
     text-decoration: none;
     font-size: 20px;
-    font-weight:600;
+    font-weight: 600;
     color: rgb(111, 206, 111);
-   
+
 }
-.linkStyle:hover{
+
+.linkStyle:hover {
     color: blue;
 }
