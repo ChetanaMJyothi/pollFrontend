@@ -17,7 +17,7 @@ const [errMessage, setErrMessage] = useState('');
         e.preventDefault();
        axios({
             method: 'post',
-            url: 'https://handsome-jumpsuit-fish.cyclic.app/api/user/signup',
+            url: 'https://inquisitive-lamb-shirt.cyclic.app/api/user/signup',
             data: {
               name: nameRef.current.value,
               email: emailRef.current.value,

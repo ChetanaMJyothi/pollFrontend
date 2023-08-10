@@ -7,7 +7,7 @@ const PollResult = () => {
   useEffect(() => {
     axios({
       method: 'get',
-      url: 'https://wandering-slippers-fawn.cyclic.app/api/poll/results',
+      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll/results',
     })
       .then(function (response) {
         console.log(response.data);

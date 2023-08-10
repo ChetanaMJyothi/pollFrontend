@@ -11,7 +11,7 @@ const PollList = () => {
   useEffect(() => {
     axios({
       method: 'get',
-      url: 'https://wandering-slippers-fawn.cyclic.app/api/poll',
+      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
@@ -27,14 +27,14 @@ const PollList = () => {
       })
   })
   
-  const selectRadioHandler = (optionN, val, pollId) => {
+  const selectRadioHandler = async (optionN, val, pollId) => {
    /*  setSelectedOption(val) */
     console.log(val);
     console.log(pollId)
 
     axios({
       method: 'patch',
-      url: 'https://wandering-slippers-fawn.cyclic.app/api/poll',
+      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
@@ -50,9 +50,14 @@ const PollList = () => {
         console.log(response.data.allPolls);
         /* setPoll(response.data.allPolls) */
         setPoll(response.data.allPolls)
-        axios({
+       /*  try{
+          const res = await fetch('https://inquisitive-lamb-shirt.cyclic.app/api/poll')
+          const resData = await res.json();
+          console.log(resData);
+        } */
+         axios({
           method: 'get',
-          url: 'https://wandering-slippers-fawn.cyclic.app/api/poll',
+          url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
     
           headers: {
             'Authorization': "Bearer " + loginUserToken,
@@ -65,7 +70,7 @@ const PollList = () => {
           })
           .catch((error) => {
             console.log(error);
-          })
+          }) 
         console.log(pollId)
         console.log(loginUserId)
         console.log(optionN)
@@ -80,7 +85,7 @@ const PollList = () => {
     console.log(pollId);
 axios({
   method: 'delete',
-  url: 'https://wandering-slippers-fawn.cyclic.app/api/poll',
+  url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
 
   headers: {
     'Authorization': "Bearer " + loginUserToken,
@@ -96,7 +101,7 @@ axios({
     /* setPoll(response.data.allPolls) */
     axios({
       method: 'get',
-      url: 'https://wandering-slippers-fawn.cyclic.app/api/poll',
+      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
