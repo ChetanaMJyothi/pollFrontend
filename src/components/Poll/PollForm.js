@@ -29,7 +29,7 @@ const PollForm = (props) => {
         })
         axios({
             method: 'post',
-            url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+            url: 'https://helpful-tights-jay.cyclic.app/api/poll',
             data: {
                 question: questionRef.current.value,
                 option1: option_1Ref.current.value,

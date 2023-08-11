@@ -18,7 +18,7 @@ const Sign = () => {
     e.preventDefault();
     axios({
       method: 'post',
-      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/user/signup',
+      url: 'https://helpful-tights-jay.cyclic.app/api/user/signup',
       data: {
         name: nameRef.current.value,
         email: emailRef.current.value,

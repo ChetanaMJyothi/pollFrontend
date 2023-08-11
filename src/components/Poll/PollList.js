@@ -13,7 +13,7 @@ const PollList = () => {
 
     axios({
       method: 'get',
-      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+      url: 'https://helpful-tights-jay.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
@@ -38,7 +38,7 @@ const PollList = () => {
 
     axios({
       method: 'patch',
-      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+      url: 'https://helpful-tights-jay.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
@@ -61,7 +61,7 @@ const PollList = () => {
          } */
         axios({
           method: 'get',
-          url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+          url: 'https://helpful-tights-jay.cyclic.app/api/poll',
 
           headers: {
             'Authorization': "Bearer " + loginUserToken,
@@ -89,7 +89,7 @@ const PollList = () => {
     console.log(pollId);
     axios({
       method: 'delete',
-      url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+      url: 'https://helpful-tights-jay.cyclic.app/api/poll',
 
       headers: {
         'Authorization': "Bearer " + loginUserToken,
@@ -105,7 +105,7 @@ const PollList = () => {
         /* setPoll(response.data.allPolls) */
         axios({
           method: 'get',
-          url: 'https://inquisitive-lamb-shirt.cyclic.app/api/poll',
+          url: 'https://helpful-tights-jay.cyclic.app/api/poll',
 
           headers: {
             'Authorization': "Bearer " + loginUserToken,
